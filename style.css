@@ -4,10 +4,18 @@
 *{
     box-sizing: border-box;
 }
+body{
+    text-align: center;
+}
+.main{
+    position:relative;
+    display: inline-block;
+    margin:30px auto;
+}
 .windows{
     width:320px;
     height:180px;
-    margin:30px auto;
+    position: relative;
     overflow: hidden;
 }
 .images{
@@ -16,4 +24,36 @@
 }
 .images>img{
     width:100%;
+}
+
+#controls>button{
+font-family:Arial, Helvetica, sans-serif;
+font-size: x-large;
+border:1px solid gray;
+display: inline-block;
+width:30px;
+height:30px;
+line-height: 30px;
+text-align: center;
+border-radius:50%;
+position:absolute;
+}
+#controls>button:nth-child(1){
+top:70px;
+left:-40px;
+}
+#controls>button:nth-child(2){
+top:70px;
+right:-40px;
+}
+#buttonWrapper>button{
+    text-align:center;
+    font-size: 20px;
+    display: inline-block;
+    width:25px;
+    height: 25px;
+    border-radius: 50%;
+}
+#buttonWrapper>button.active{
+    color:red;
 }

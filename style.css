@@ -1,0 +1,19 @@
+*{
+    margin:0;padding:0;
+}
+*{
+    box-sizing: border-box;
+}
+.windows{
+    width:320px;
+    height:180px;
+    margin:30px auto;
+    overflow: hidden;
+}
+.images{
+    display: flex;
+    transition:all 1s;
+}
+.images>img{
+    width:100%;
+}
